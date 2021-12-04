@@ -1,0 +1,29 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#root{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: fit-content;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.disabled{
+    background: #ccc;
+    pointer-events: none;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+    <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+    <div id="root">
+       <button id="button">create Promise</button>
+    </div>
+    <script src="./index.js"></script>
+    <script>
+        const btn = document.getElementById('button');
+        btn.addEventListener('click',createPromise);
+        function createPromise(){
+            btn.disabled = true;
+            btn.classList.add('disabled');
+            btn.innerText = "Pending";
+            const p = new MyPromise((resolve,reject)=>{
+                setTimeout(resolve,2000)
+            }).then(()=>{
+               btn.disabled = false;
+               btn.classList.remove('disabled');
+               btn.innerText = "Fulfilled";
+               setTimeout(()=>{
+                btn.innerText = "Create Promise";
+               },500)
+            })
+        }
+    </script>
+</body>
+</html>
