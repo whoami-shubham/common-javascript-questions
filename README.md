@@ -3,7 +3,7 @@
 
 [demo index ](https://whoami-shubham.github.io/common-javascript-questions/)
 
-common javascript questions implementation in Vannila JavaScript 
+common javascript questions implementation in Vanilla JavaScript 
  - [throttle and debounce](https://whoami-shubham.github.io/common-javascript-questions/throttle-and-debounce/index.html)
  - [star ratings](https://whoami-shubham.github.io/common-javascript-questions/start-ratings/index.html)
  - [Promise implementation](https://whoami-shubham.github.io/common-javascript-questions/promise/index.html)
